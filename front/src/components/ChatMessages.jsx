@@ -1,11 +1,13 @@
 import React from 'react';
 import ChatIcon from './ChatIcon';
 
-const ChatMessages = () => {
+const ChatMessages = ({ chat }) => {
   return (
-    <div className="message user-message">
-      {/* <ChatIcon /> */}
-      <p className="message-text">민사 소송 절차에 대해 알려주세요.</p>
+    <div
+      className={`message ${chat.role === 'model' ? 'bot' : 'user'}-message`}
+    >
+      {chat.role === 'model' && <ChatIcon />}
+      <p className="message-text">{chat.text}</p>
     </div>
   );
 };
