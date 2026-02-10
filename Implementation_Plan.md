@@ -7,7 +7,13 @@
 - **백엔드**: Python 3.14 (전역 환경: `C:\Users\pc9\AppData\Local\Programs\Python\Python314\python.exe`).
 - **핵심 파일**: `back/agent.py`, `back/main.py`.
 - **설정 파일**: `back/.env`.
+- **설정 파일**: `back/.env`.
 - **주요 라이브러리**: `python-dotenv`, `langchain-openai`, `langchain-community`, `langgraph`, `tavily-python`.
+
+- **프론트엔드**: React + Vite (Node.js 환경).
+- **핵심 파일**: `front/src/App.jsx`, `front/src/components/ChatForm.jsx`.
+- **UI 스타일**: Vanilla CSS (`App.css`).
+- **상태 관리**: `useState`, `useRef` (Local State).
 
 ## 2. 이슈 분석 및 해결 전략
 
@@ -48,3 +54,23 @@
 
 - **Logging**: 프로덕션 레벨의 로깅 시스템 도입 고려.
 - **Validation**: Pydantic 모델을 더 엄격하게 정의하여 입력 데이터 검증 강화.
+
+## 4. API 명세 (API Specification)
+
+상세한 API 명세는 프로젝트 루트의 `API_SPECIFICATION.md` 파일을 참조하십시오.
+
+### 핵심 엔드포인트 요약
+
+- **`GET /`**: Health Check
+- **`POST /chat`**: Main Chat Endpoint (Legal Advice)
+
+## 5. 시스템 아키텍처 (System Architecture)
+
+상세한 시스템 아키텍처와 데이터 흐름은 프로젝트 루트의 **`README.md`** 파일에 통합되었습니다.
+
+### 주요 데이터 흐름
+
+1. **User Input** -> `ChatForm.jsx` -> `App.jsx`
+2. **API Request** -> `main.py` -> `agent.py`
+3. **AI Logic** -> `LangChain Agent` -> `Tavily Search` -> `OpenAI`
+4. **Response** -> `main.py` -> `App.jsx` -> `ChatMessages.jsx`

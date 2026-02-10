@@ -22,3 +22,14 @@
 
 - [x] **agent.py 예외 처리**: API 키 누락 및 에이전트 초기화 실패 시 서버 크래시 방지 로직 추가.
 - [x] **main.py 요청 검증**: 클라이언트 요청(`request.contents`) 구조체 접근 시 `IndexError` 방지를 위한 안전한 접근 로직 구현.
+
+### 5. 프로젝트 문서화 (v1.3)
+
+### 5. 프로젝트 문서화 (v1.3)
+
+- [x] **기능 명세서 작성**: `README.md` 파일 생성 완료. (Feature List 포함)
+- [x] **API 명세서 작성**: `API_SPECIFICATION.md` 파일 생성 완료. (`POST /chat` 상세 스펙 포함)
+- [x] **기능 명세서 작성**: `README.md` 파일 생성 완료. (Feature List 포함)
+- [x] **API 명세서 작성**: `API_SPECIFICATION.md` 파일 생성 완료. (`POST /chat` 상세 스펙 포함)
+- [x] **프론트엔드 명세 추가**: `README.md`에 UI 기능 리스트 통합 완료. (v1.4)
+- [x] **아키텍처 구조도 작성 (v1.5)**: `ARCHITECTURE.md` 대신 `README.md`에 시스템 아키텍처 및 데이터 흐름도 통합 완료. (사용자 요청 반영)
