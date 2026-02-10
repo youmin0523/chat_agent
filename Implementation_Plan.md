@@ -64,9 +64,12 @@
 - **`GET /`**: Health Check
 - **`POST /chat`**: Main Chat Endpoint (Legal Advice)
 
-## 5. 시스템 아키텍처 (System Architecture)
+## 5. 시스템 아키텍처 및 학습 가이드
 
-상세한 시스템 아키텍처와 데이터 흐름은 프로젝트 루트의 **`README.md`** 파일에 통합되었습니다.
+- **아키텍처 요약**: `README.md` 참조.
+- **상세 데이터 흐름 학습**: `DATA_FLOW.md` 참조. (변수 단위의 이동 경로 상세 설명)
+
+### 주요 데이터 흐름
 
 ### 주요 데이터 흐름
 
