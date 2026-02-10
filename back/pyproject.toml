@@ -13,3 +13,9 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "uvicorn>=0.40.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "my-project",
+    "example",
+]
